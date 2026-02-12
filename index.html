@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Retro Arcade</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#000428,#004e92);
+    background-size:400% 400%;
+    animation:bg 15s ease infinite;
+    color:white;
+    text-align:center;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+h1{
+    margin-top:40px;
+    font-size:55px;
+    color:#0ff;
+    text-shadow:0 0 20px #0ff,0 0 40px #0ff,0 0 80px #0ff;
+}
+
+.subtitle{
+    margin-bottom:40px;
+    color:#ddd;
+    font-size:18px;
+}
+
+.games{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:40px;
+    padding:20px;
+}
+
+.game{
+    width:260px;
+    background:#111;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.4s;
+    box-shadow:0 0 20px #0ff;
+}
+
+.game:hover{
+    transform:scale(1.1) rotate(1deg);
+    box-shadow:0 0 40px #0ff,0 0 80px #0ff;
+}
+
+.game img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+}
+
+.game-title{
+    padding:15px;
+    font-weight:bold;
+    font-size:18px;
+    text-transform:uppercase;
+    background:#000;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎮 Retro Arcade</h1>
+<div class="subtitle">Clique sur un jeu et il s’ouvrira en plein écran</div>
+
+<div class="games">
+
+<a href="mario.html" target="_blank">
+<div class="game">
+    <img src="https://external-preview.redd.it/if-new-super-mario-bros-was-released-for-the-nintendo-ds-v0-eDZpM2Vqc3g3bHplMYzd_kfxxuh8zKWk6-zCuI-LFxv092v-zfmXHvo2AP4u.png?format=pjpg&auto=webp&s=1398815fec3ce4b2f2e0025e1cc9638957dbfd29">
+    <div class="game-title">Mario</div>
+</div>
+</a>
+
+<a href="pokemon.html" target="_blank">
+<div class="game">
+    <img src="https://cubiccreativity.wordpress.com/wp-content/uploads/2022/02/pokemon-red-and-blue-header.jpg">
+    <div class="game-title">Pokémon</div>
+</div>
+</a>
+
+<a href="snes.html" target="_blank">
+<div class="game">
+    <img src="https://i.ytimg.com/vi/ivhyruPrIhE/maxresdefault.jpg">
+    <div class="game-title">Street Fighter X-Men</div>
+</div>
+</a>
+
+<a href="fnf.html" target="_blank">
+<div class="game">
+    <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000056577/70e89e31ff3010fda960537db0d6314d4cbf38e7674e078c2108ffe27f7c9537">
+    <div class="game-title">Final Fantasy</div>
+</div>
+</a>
+
+</div>
+
+</body>
+</html>
